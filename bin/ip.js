@@ -13,7 +13,7 @@ output = '<h1>' + 'Internal IP: ' + output + '<h1>'
 text = text.replace('<h1>Serving up static files like they were turtles strapped to rockets.</h1>', output) //output: 'A D C'
 console.log('Output was: %s', output);
 
-fs.writeFile("public/test.html", text, function(err) {
+fs.writeFile("public/index.html", text, function(err) {
 
     if(err) {
         return console.log(err);
